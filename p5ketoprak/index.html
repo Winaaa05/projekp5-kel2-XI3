@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENGIRIS SAYURAN OTOMATIS</title>
+    <!--<link rel="stylesheet" href="cireng.css">-->
+    <style>
+        *{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFEBD8;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #537D5D;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #FFC5C5;
+    z-index: 1;
+    border: 7px solid #C7DCA7;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #537D5D;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    border-radius: 100px;
+    text-decoration: underline;
+}
+
+section {
+    margin: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 60px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #F49BAB;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #F49BAB;
+    width: 100%;
+    line-height: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.apaaja {
+    width: 60%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 70px;
+
+}
+
+.gatau {
+    width: 60%;
+    height: 280px;
+    background: #FFEBD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.kolom img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 180px;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+.vid {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vid video{
+    border-radius: 20px;
+    height: 360px;
+    width: 640px;
+}
+
+.winoy video{
+    border-radius: 20px;
+    height: 360px;
+    width: 640px;
+}
+
+.winoy {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: #472e2e;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    color: #472e2e;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul{
+    padding-bottom: 35px;
+}
+
+.boxorang{
+    width: 95%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 70px;
+}
+
+.boxpribadi {
+    width: 95%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-bottom: 12%;
+}
+
+.namira img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.namira {
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 200px;
+    height: 220px;
+    color: #472e2e;
+}
+
+.boxtiwi {
+    width: 80%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-bottom: 12%;
+}
+
+.yaya {
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 200px;
+    height: 220px;
+    color: #472e2e;
+}
+
+.yaya img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.boxwina{
+    width: 80%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 70px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=>CHOPPER SAYURAN</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Kelompok">Kelompok</a></li>
+                    <li><a href="#Produk">Produk</a></li>
+                    <li><a href="#Kelebihan">Kelebihan</a></li>
+                    <li><a href="#Kekurangan">Kekurangan</a></li>
+                    <li><a href="#Galeri">Galeri</a></li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- untuk kelompok -->
+        <section id="Kelompok">
+            <img src="c:\p5ketoprak\WhatsApp Image 2025-06-13 at 21.14.48.jpeg" width="480" height="650"/>
+            <div class="kolom">
+                <p class="deskripsi">Pemanfaatan Barang Bekas</p>
+                <h2>CHOPPER SAYURAN</h2>
+                <p>Oleh:</p>
+            <div class="boxorang">
+                <div class="boxpribadi">
+                    <div class="namira">
+                        <img src="c:\p5ketoprak\namira.jpeg">
+                        <h4>Namira Najya Dianty</h4>
+                    </div>
+                     <div class="namira">    
+                        <img src="c:\p5ketoprak\wina.jpeg">
+                        <h4>Fauziah Hikmah Nur Winanta</h4>
+                    </div>
+                     <div class="namira">
+                        <img src="c:\p5ketoprak\putri.jpeg">
+                        <h4>Maharani Putri Aurantifelia Adjie Saputro</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxwina">
+                <div class="boxtiwi">
+                     <div class="yaya">
+                        <img src="c:\p5ketoprak\yaya.jpeg">
+                        <h4>Najla Athira Herlambang</h4>
+                    </div>
+                     <div class="yaya">
+                        <img src="c:\p5ketoprak\tiara.jpeg">
+                        <h4>Tiara Nurya Paramitha Dewi</h4>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+
+        <!-- untuk produk-->
+        <section id="Produk">
+            <div class="kolom">
+                <p class="deskripsi">Deskripsi produk, manfaat, alat dan bahan, dan langkah-langkah.</p>
+                <h2>Deskripsi Produk</h2>
+                <p><i>Chopper</i> sayuran ini dibuat dari barang bekas yang berfungsi untuk memotong sayur secara praktis dan efisien. Cocok untuk ibu rumah
+                    tangga maupun pedagang kecil yang ingin menghemat waktu mengiris sayuran dalam jumlah banyak. Alat ini portable, hemat energi, efisien, dan bisa digunakan di rumah,
+                    warung, atau saat camping karena tidak memerlukan listrik. Cara kerja: tekan tombol on untuk menyalakan alat, masukkan sayuran ke dalam pipa saat
+                    pisau sudah stabil berputar, lalu irisan sayur akan langsung tertampung di toples dan siap digunakan</p>
+
+                <h2>Manfaat:</h2>
+                <ol>
+                    <li>Bagi Lingkungan: Mengurangi jumlah limbah plastik dan limbah kayu yang sudah tidak
+                        digunakan dan mempraktikan reuse dan upcycling dalam kehidupan sehari-hari.</li>
+                    <li>Bagi Masyarakat/pengguna: Menyediakan alat <i>chopper</i> sayuran yang praktis dan mengedukasi tentang cara membuat alat chopper sederhana dengan 
+                        memanfaatkan bahan bekas.</li>
+                    <li>Bagi pendidikan: Mendorong pemikiran problem-solving.</li>
+                </ol>
+
+                <h2>Alat:</h2>
+                 <ol>
+                     <li>Cutter</li>
+                     <li>Solder</li>
+                     <li>Penggaris</li>
+                     <li>Pensil</li>
+                     <li>Jangkar</li>
+                     <li>Bor</li>
+                 </ol>
+
+                <h2>Bahan</h2>
+                <ol>
+                    <li>Toples plastik bekas</li>
+                    <li>Karton/triplek</li>
+                    <li>Pipa bekas</li>
+                    <li>Dinamo</li>
+                    <li>baterai 9/12V</li>
+                    <li>Isi cutter</li>
+                    <li>Baut</li>
+                    <li>Sakelar on/off</li>
+                </ol>
+
+                <h2>Proses:</h2>
+                <p><b>Fase pertama:</b></p>
+                <ul>
+                    <li>Pemilihan alat dan bahan: mencari toples bekas dan triplek bekas, kemudian menyiapkan  
+                    bahan bahan yang akan digunakan untuk membuat produk.</li>
+                    <li>Perencanaan komponen: tentukan bahan apa yang akan digunakan, mencari dinamo dan  
+                    baterai yang digunakan dan memilih alat kelistrikan apa yang akan digunakan dan  
+                    menggambar sketsa bentuk akan jadi seperti apa.</li>
+                </ul>
+                <p><b>Fase Kedua:</b></p>
+                <ul>
+                    <li>Pada triplek pertama yang berbentuk lingkaran dengan ukuran 17x17, lubangi triplek  
+                    dengan bor lalu pasang dinamo dan kencangkan baut.</li>
+                    <li>Gambar lingkaran kecil disamping kanan baut dengan diameter sesuai dengan ukuran pipa, lalu  
+                    lubangi.</li>
+                    <li>Ambil triplek kedua berbentuk lingkaran dengan ukuran 14x14, lubangi berbentuk  
+                    persegi panjang di sisi kanan atas dan kiri bawah namun tetap dekat pada pusat lingkaran.</li>
+                    <li>Pasang kayu kecil disamping kanan dan kiri lubang persegi panjang, lalu lem pisau cutter  
+                    pada kayu kecil tsb dan pasang baut untuk mengencangkan. Pada tutup botol juga pasangkan  
+                    dinamo agar isi cutter bisa berputar.</li>
+                </ul>
+                <p><b>Fase Ketiga:</b></p>
+                <ul>
+                    <li>Pasangkan kedua triplek tersebut pada tutup toples dan rapihkan.</li>
+                    <li>Pada badan toples lubangi toples dan tempelkan baterai yang sudah di sambungkan dengan kabel dinamo.</li>
+                    <li>Pada tutup toples pasangkan tombol on off yang sudah disambungkan dengan dinamo dan baterai.</li>
+                    <li>Sambungkan ketiga bahan tersebut agar alat pengiris dapat bekerja. Kemudian pasangkan tutup toples dengan toples agar melihat hasil akhirnya.</li>
+                    <li>Terakhir pasang pipa pada tutup toples untuk memasukkan timun atau bahan lain.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--untuk Kelebihan-->
+        <section id="Kelebihan">
+            <div class="kolom">
+            <p class="deskripsi">Kelebihan produk alat ini</p>
+            <h2>Kelebihan Produk:</h2>
+            <ol>
+                <li>Terbuat dari barang bekas yang mudah ditemukan serta alat kelistrikan yang murah dan sederhana sehingga lebih ramah lingkungan dan hemat biaya.</li>
+                <li>Memberikan efisiensi waktu kerja dalam dapur bagi IRT dengan menyajikan kualitas hasil potongan yang lebih seragam dan rapi dan langsung tertampung dalam wadah berupa toples.</li>
+            </ol>
+            </div>
+        </section>
+
+        <!--untuk Kekurangan-->
+        <section id="Kekurangan">
+            <div class="kolom">
+            <p class="deskripsi">Kekurangan dan solusinya</p>
+            <h2>Kekurangan Produk:</h2>
+            <ol>
+                <li>Dikarenakan produk ini dibuat secara manual  dirumah, sehingga ada kemungkinan untuk tidak berfungsi.
+                    Maka dari itu diperlukan pengawasan mekanik yg lebih ahli dalam pembuatan alat ini.</li>
+                <li>Kurangnya jaminan higienis, kerangka yg terbuat dari triplek atau karton membuat alat ini
+                    memerlukan perawatan pembersihan yg extra agar tidak berjamur atau berlapuk.</li>
+                <li>Adanya limbah baterai hasil penggunaan alat ini jika digunakan dengan kontinu, namun baterai tersebut bisa diganti menggunakan baterai <i>rechargeable</i> dengan volt yang setara yaitu 12v.</li>
+                <li>Perlu penyesuaian antara ukuran dinamo dan baterai, agar mendapatkan potongan yang rapi dan seragam.</li>
+                <li>Memerlukan peletakan/tempat yang rapi antara baterai, saklar, dan kabel</li>
+            </div>
+        </section>
+
+        <!--untuk galeri-->
+        <section id="Galeri">
+            <div class="kolom">
+                <p class="deskripsi">Foto-foto dan video pengerjaan</p>
+                <h2>Galeri</h2>
+                <div class="apaaja">
+                 <div class="gatau">
+                    <img src="c:\p5ketoprak\WhatsApp Image 2025-06-04 at 07.34.33.jpeg"/>
+                    <img src="c:\p5ketoprak\WhatsApp Image copy 1.jpeg"/>
+                    <img src="c:\p5ketoprak\WhatsApp Image copy 2.jpeg"/>
+                 </div>
+                </div>
+
+                <div class="vid">
+                    <video autoplay controls height="400">
+                    <source src="c:\p5ketoprak\video 3.mp4" type="video/mp4">
+                    Browser anda tidak mendukung video
+                    </video>
+                 <div class="winoy">
+                    <video autoplay controls height="400">
+                    <source src="c:\p5ketoprak\WhatsApp Video 2025-06-10 at 19.58.33 (1).mp4" type="video/mp4">
+                    Browser anda tidak mendukung video.
+                    </video>
+                 </div>
+                </div>
+             </div>
+        </section>
+
+    </div>
+</body>
+</html>
